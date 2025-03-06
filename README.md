@@ -6,9 +6,13 @@
 ```bash
 git clone https://github.com/EliottElek/dsti-lab-10-authentication.git
   ```
-- Run the project:
+- Copy `.env` files:
 ```bash
 cd dsti-lab-10-authentication
+cp ./supabase/.env.example ./supabase/.env && cp ./next-client/.env.example ./next-client/.env.local
+```
+- Run the project:
+```bash
 docker compose -f ./supabase/docker-compose.yml -f ./next-client/docker-compose.yml up -d
   ```
 
